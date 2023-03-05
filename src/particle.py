@@ -109,23 +109,23 @@ def apply_rule(particle_group1: List[Particle], particle_group2: List[Particle],
             if(a.x <= D):
                 # a.x = SCREEN_DIM[0]
 
-                # a.x = D
+                a.x = D
                 a.vx *= -V
             elif(a.x >= SCREEN_DIM[0] - D):
                 # a.x = 0
 
-                # a.x = SCREEN_DIM[0] - D
+                a.x = SCREEN_DIM[0] - D
                 a.vx *= -V
 
             if(a.y <= D):
                 # a.y = SCREEN_DIM[1]
 
-                # a.y = D
+                a.y = D
                 a.vy *= -V
             elif(a.y >= SCREEN_DIM[1] - D):
                 # a.y = 0
 
-                # a.y = SCREEN_DIM[1] - D
+                a.y = SCREEN_DIM[1] - D
                 a.vy *= -V
 
 
