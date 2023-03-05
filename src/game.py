@@ -1,3 +1,7 @@
+"""
+AUTHOR: Vishal Paudel
+"""
+
 
 import pygame
 
