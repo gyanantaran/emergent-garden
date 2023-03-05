@@ -11,8 +11,8 @@ This project is a simulation of emergent behavior, with particles that interact 
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/your-username/particle-simulation.git`
-2. Navigate to the project directory: `cd particle-simulation`
+1. Clone the repository: `git clone https://github.com/vishalpaudel/emergent-garden.git`
+2. Navigate to the project directory: `cd emergent-garden`
 3. Install the required dependencies: `pip install -r requirements.txt`
 
 ## Implementation Details
