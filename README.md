@@ -32,9 +32,12 @@ python main.py
 ```
 
 ## Some example images
+
 ![A winged entity is born!](./docs/images/main-1.jpg "Example Image")
-![A fast bacteria is born!](./docs/videos/gif-3.mov "Example Video 1")
-![A cellular organism is born!](./docs/videos/gif-1.mov "Example Video 2")
+
+https://user-images.githubusercontent.com/95016059/222963837-e8ee8f93-9801-4724-95ba-d5fdd2b2f799.mov
+
+https://user-images.githubusercontent.com/95016059/222963862-7694d343-2658-421c-ae9e-ea5b7686f50f.mov
 
 
 ## How it Works
