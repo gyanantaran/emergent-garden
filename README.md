@@ -87,6 +87,12 @@ The following decisions were made during the implementation of the simulation:
 * Pygame was chosen for visualisation, as it is a popular library for game development in Python and provides a simple interface for handling graphics and user input.
 * The simulation was designed to be highly customisable, with a large number of adjustable parameters for both the particle system and the
 
+## Further explorations
+
+https://www.youtube.com/watch?v=zMJwI_zOEBE&ab_channel=VishalPaudel
+
+https://www.youtube.com/watch?v=JlVDaj9zQ8g&ab_channel=VishalPaudel
+
 ## Contributing
 
 Contributions are welcome! Feel free to open a pull request or submit an issue if you find any bugs or have any suggestions for new features.
