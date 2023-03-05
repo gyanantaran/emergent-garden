@@ -31,6 +31,12 @@ To run the simulation, simply navigate to the directory containing the main.py c
 python main.py
 ```
 
+## Some example images
+![A winged entity is born!](./docs/images/main-1.jpg "Example Image")
+![A fast bacteria is born!](./docs/videos/gif-3.mov "Example Video 1")
+![A cellular organism is born!](./docs/videos/gif-1.mov "Example Video 2")
+
+
 ## How it Works
 The simulation consists of a number of particles that move around a 2D environment. Each particle follows basic laws of physics: it moves with constant velocity unless acted on by an external force, and it experiences a force proportional to the inverse square of the distance to other particles. The particles are also affected by the boundaries of the simulation environment, which exert a repulsive force to keep them from leaving.
 
