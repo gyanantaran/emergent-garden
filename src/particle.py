@@ -8,7 +8,7 @@ import pygame
 import random
 import math
 
-from src.constants import PARTICLE_DEFAULT_RADIUS, SCREEN_DIM, WALL_HEAT, WALL_BOUNDARY, PARTICLE_CLOSENESS_LIMIT, PARTICLE_POWER_OF_DISTANCE, PARTICLE_DEFAULT_UPDATE_TIME
+from src.constants import PARTICLE_DEFAULT_RADIUS, SCREEN_DIM, WALL_HEAT, WALL_BOUNDARY, PARTICLE_FORCE_LOWER_RANGE, PARTICLE_FORCE_UPPER_RANGE, PARTICLE_POWER_OF_DISTANCE, PARTICLE_DEFAULT_UPDATE_TIME, PARTICLE_LOSE_ENERGY
 
 class Particle:
     def __init__(
@@ -84,8 +84,8 @@ def apply_rule(particle_group1: List[Particle], particle_group2: List[Particle],
             d = (dx ** 2 + dy ** 2) ** (1 / 2)
 
             # THE RULE
-            if (d > PARTICLE_CLOSENESS_LIMIT):
-                F = g * 1 / (len(particle_group1) * d ** PARTICLE_POWER_OF_DISTANCE)
+            if (PARTICLE_FORCE_UPPER_RANGE > d > PARTICLE_FORCE_LOWER_RANGE):
+                F = g * 1 / (d ** PARTICLE_POWER_OF_DISTANCE)# * len(particle_group1))
 
                 fx = F * dx
                 fy = F * dy
@@ -95,8 +95,9 @@ def apply_rule(particle_group1: List[Particle], particle_group2: List[Particle],
                 continue
 
             # ANOTHER MAIN RULE
-            a.vx += fx * dt
-            a.vy += fy * dt
+            # LOSE ENERGY
+            a.vx = (a.vx + fx * dt) * PARTICLE_LOSE_ENERGY
+            a.vy = (a.vy + fy * dt) * PARTICLE_LOSE_ENERGY
 
             a.x += a.vx * dt
             a.y += a.vy * dt
@@ -108,23 +109,23 @@ def apply_rule(particle_group1: List[Particle], particle_group2: List[Particle],
             if(a.x <= D):
                 # a.x = SCREEN_DIM[0]
 
-                a.x = D
+                # a.x = D
                 a.vx *= -V
             elif(a.x >= SCREEN_DIM[0] - D):
                 # a.x = 0
 
-                a.x = SCREEN_DIM[0] - D
+                # a.x = SCREEN_DIM[0] - D
                 a.vx *= -V
 
             if(a.y <= D):
                 # a.y = SCREEN_DIM[1]
 
-                a.y = D
+                # a.y = D
                 a.vy *= -V
             elif(a.y >= SCREEN_DIM[1] - D):
                 # a.y = 0
 
-                a.y = SCREEN_DIM[1] - D
+                # a.y = SCREEN_DIM[1] - D
                 a.vy *= -V
 
 
