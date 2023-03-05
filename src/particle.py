@@ -7,6 +7,7 @@ from ctypes import c_ubyte
 import pygame
 import random
 import math
+import numpy
 
 from src.constants import PARTICLE_DEFAULT_RADIUS, SCREEN_DIM, WALL_HEAT, WALL_BOUNDARY, PARTICLE_FORCE_LOWER_RANGE, PARTICLE_FORCE_UPPER_RANGE, PARTICLE_POWER_OF_DISTANCE, PARTICLE_DEFAULT_UPDATE_TIME, PARTICLE_LOSE_ENERGY
 
@@ -37,7 +38,6 @@ class Particle:
         self.c = c
         self.r = r
 
-        print("Particle initialised!")
 
     def update(self, dt: float):
         """Updates the attributes of the particle
@@ -49,6 +49,7 @@ class Particle:
         # to keep it frame independent
         # apply_rule()
         pass
+
 
     def draw(self, screen: pygame.Surface):
         """Draws the particle(a circle)
@@ -106,24 +107,24 @@ def apply_rule(particle_group1: List[Particle], particle_group2: List[Particle],
             V = WALL_HEAT
             D = WALL_BOUNDARY
             # Boundary property
-            if(a.x <= D):
-                # a.x = SCREEN_DIM[0]
+            if(a.x < D):
+                # a.x = SCREEN_DIM[0] - D
 
                 a.x = D
                 a.vx *= -V
-            elif(a.x >= SCREEN_DIM[0] - D):
-                # a.x = 0
+            elif(a.x > SCREEN_DIM[0] - D):
+                # a.x = D
 
                 a.x = SCREEN_DIM[0] - D
                 a.vx *= -V
 
-            if(a.y <= D):
-                # a.y = SCREEN_DIM[1]
+            if(a.y < D):
+                # a.y = SCREEN_DIM[1] - D
 
                 a.y = D
                 a.vy *= -V
-            elif(a.y >= SCREEN_DIM[1] - D):
-                # a.y = 0
+            elif(a.y > SCREEN_DIM[1] - D):
+                # a.y = D
 
                 a.y = SCREEN_DIM[1] - D
                 a.vy *= -V
@@ -133,7 +134,7 @@ def instantiateGroup(
     num: int,
     c: tuple,
     frame: Tuple[Tuple[int, int], Tuple[int, int]]
-    ) -> List[Particle]:
+    ) -> numpy.array:
     """Method to instantiate a group of particles
 
     Args:

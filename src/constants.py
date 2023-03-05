@@ -1,26 +1,27 @@
 
-PARTICLE_DEFAULT_SPAWN_NUM = 500
+PARTICLE_DEFAULT_SPAWN_NUM = 125
 
 
 # ADVANCED CONTROLS
-WALL_HEAT = 1
-WALL_BOUNDARY = 100
+WALL_HEAT = 5
+WALL_BOUNDARY = 10
 
-FRAME_RATE = 60
+FRAME_RATE = 10
 PARTICLE_LOSE_ENERGY = 0.5
 
-PARTICLE_FORCE_LOWER_RANGE = 1
-PARTICLE_FORCE_UPPER_RANGE = 100
+PARTICLE_FORCE_LOWER_RANGE = 0
+PARTICLE_FORCE_UPPER_RANGE = 80
 
 PARTICLE_DEFAULT_UPDATE_TIME = 1
-PARTICLE_POWER_OF_DISTANCE = 1
+PARTICLE_POWER_OF_DISTANCE = 2
 
 # ALMOST NEVER CHANGES:
-SCREEN_DIM = (1000, 1000)
+x = 600
+SCREEN_DIM = (x, x)
 
 BACK_BLACK = (0, 0, 0)
 
-PARTICLE_DEFAULT_RADIUS = 2
+PARTICLE_DEFAULT_RADIUS = 3
 
 PARTICLE_COLOR_RED = (0xff, 0x00, 0x00)
 PARTICLE_COLOR_YELLOW = (0xff, 0xA0, 0x00)
@@ -28,15 +29,15 @@ PARTICLE_COLOR_GREEN = (0x00, 0xff, 0x00)
 PARTICLE_COLOR_BLUE = (0x00, 0x00, 0xff)
 
 # THE SPAWNING MARGINS
-margin_x, margin_y = (0.25, 0.25)
+margin_x, margin_y = (0.5, 0.5)
 center_x, center_y = (0.5, 0.5)
 PARTICLE_DEFAULT_SPAWN_FRAME = (
     (
-        int((center_x - margin_x) * SCREEN_DIM[0]),
-        int((center_x + margin_x) * SCREEN_DIM[0])
+        int((center_x - margin_x) * (SCREEN_DIM[0] - 2 * WALL_BOUNDARY) + WALL_BOUNDARY),
+        int((center_x + margin_x) * (SCREEN_DIM[0] - 2 * WALL_BOUNDARY) + WALL_BOUNDARY)
     ),
     (
-        int((center_y - margin_y) * SCREEN_DIM[1]),
-        int((center_y + margin_y) * SCREEN_DIM[1])
+        int((center_y - margin_y) * (SCREEN_DIM[1] - 2 * WALL_BOUNDARY) + WALL_BOUNDARY),
+        int((center_y + margin_y) * (SCREEN_DIM[1] - 2 * WALL_BOUNDARY) + WALL_BOUNDARY)
     )
 )

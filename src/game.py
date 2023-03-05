@@ -44,25 +44,25 @@ class Game:
             #     particle.update(self.dt)
 
             # INTERACTION DEFINITIONS
-            apply_rule(red_particles, red_particles, -0.2)
-            apply_rule(red_particles, yellow_particles, 0.2)
-            apply_rule(red_particles, green_particles, -0.34)
-            apply_rule(red_particles, blue_particles, 0.4)
+            apply_rule(red_particles, red_particles, -6.5)
+            apply_rule(red_particles, yellow_particles, 0)
+            apply_rule(red_particles, green_particles, -20)
+            apply_rule(red_particles, blue_particles, 31.5)
 
-            apply_rule(yellow_particles, yellow_particles, 0.5)
-            apply_rule(yellow_particles, red_particles, -0.15)
-            apply_rule(yellow_particles, green_particles, 0.2)
-            apply_rule(yellow_particles, blue_particles, -0.1)
+            apply_rule(yellow_particles, yellow_particles, -46)
+            apply_rule(yellow_particles, red_particles, 26)
+            apply_rule(yellow_particles, green_particles, 14)
+            apply_rule(yellow_particles, blue_particles, 0)
 
-            apply_rule(green_particles, green_particles, 0.32)
-            apply_rule(green_particles, red_particles, 0.17)
-            apply_rule(green_particles, yellow_particles, -0.34)
-            apply_rule(green_particles, blue_particles, -0.44)
+            apply_rule(green_particles, green_particles, 16.5)
+            apply_rule(green_particles, red_particles, 0)
+            apply_rule(green_particles, yellow_particles, 15)
+            apply_rule(green_particles, blue_particles, 0)
 
-            apply_rule(blue_particles, green_particles, 0.2)
-            apply_rule(blue_particles, red_particles, 0.1)
-            apply_rule(blue_particles, yellow_particles, -0.4)
-            apply_rule(blue_particles, blue_particles, -0.54)
+            apply_rule(blue_particles, blue_particles, -13.5)
+            apply_rule(blue_particles, red_particles, 5.5)
+            apply_rule(blue_particles, yellow_particles, 2.5)
+            apply_rule(blue_particles, green_particles, 0.5)
 
             self.screen.fill(BACK_BLACK)
             for i in range(len(red_particles)):
