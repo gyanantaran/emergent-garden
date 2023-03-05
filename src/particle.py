@@ -86,14 +86,13 @@ def apply_rule(particle_group1: List[Particle], particle_group2: List[Particle],
 
             # THE RULE
             if (PARTICLE_FORCE_UPPER_RANGE > d > PARTICLE_FORCE_LOWER_RANGE):
-                F = g * 1 / (d ** PARTICLE_POWER_OF_DISTANCE)# * len(particle_group1))
+                F = g * 1 / (d ** PARTICLE_POWER_OF_DISTANCE * len(particle_group1))
 
                 fx = F * dx
                 fy = F * dy
             else:
                 if d < 0:
                     print("Invalid and Unexpected while applying rule")
-                continue
 
             # ANOTHER MAIN RULE
             # LOSE ENERGY
@@ -110,23 +109,23 @@ def apply_rule(particle_group1: List[Particle], particle_group2: List[Particle],
             if(a.x < D):
                 # a.x = SCREEN_DIM[0] - D
 
-                a.x = D
+                a.x = D + 1
                 a.vx *= -V
             elif(a.x > SCREEN_DIM[0] - D):
                 # a.x = D
 
-                a.x = SCREEN_DIM[0] - D
+                a.x = SCREEN_DIM[0] - D - 1
                 a.vx *= -V
 
             if(a.y < D):
                 # a.y = SCREEN_DIM[1] - D
 
-                a.y = D
+                a.y = D + 1
                 a.vy *= -V
             elif(a.y > SCREEN_DIM[1] - D):
                 # a.y = D
 
-                a.y = SCREEN_DIM[1] - D
+                a.y = SCREEN_DIM[1] - D - 1
                 a.vy *= -V
 
 
