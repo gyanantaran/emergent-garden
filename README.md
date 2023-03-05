@@ -71,7 +71,7 @@ The current implementation of the simulation provides a solid foundation for exp
 ## Conclusion
 Emergent behavior is a fascinating phenomenon that can be observed in a variety of complex systems. By simulating these systems, we can gain a better understanding of how they work and how emergent behavior arises. This simulation provides a simple but powerful tool for exploring emergent behavior in particle systems, and can be expanded upon in a variety of ways to explore even more complex systems.
 
-# Decisions
+## Decisions
 The following decisions were made during the implementation of the simulation:
 
 * The simulation was implemented in Python 3, as it is a popular and widely-used language that is easy to read and write.
