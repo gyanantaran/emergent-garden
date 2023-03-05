@@ -1,6 +1,6 @@
 # Emergent Behaviour Simulation
 
-This project is a simulation of emergent behavior, with particles that interact with each other and their environment. The goal of this project is to create a simulation that demonstrates emergent behavior, which arises when the collective behavior of a large number of entities results in complex, unexpected patterns.
+This project(built over a weekend) is a simulation of emergent behavior, with particles that interact with each other and their environment. The goal of this project is to create a simulation that demonstrates emergent behavior, which arises when the collective behavior of a large number of entities results in complex, unexpected patterns.
 
 ## Features
 
