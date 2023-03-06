@@ -9,11 +9,15 @@ This project(built over a weekend) is a simulation of emergent behavior, with pa
 - Particles also interact with the walls of the screen, either bouncing off of them or being attracted to them.
 - The simulation can be adjusted with various parameters, including the number of particles, the frame rate, and the force values.
 
-## Installation
+## Installation and configuration
 
 1. Clone the repository: `git clone https://github.com/vishalpaudel/emergent-garden.git`
 2. Navigate to the project directory: `cd emergent-garden`
-3. Install the required dependencies: `pip install -r requirements.txt`
+3. Create python environment: `python3.11 -m venv .venv --prompt="emergent-garden"`
+4. Source the vitual environment: `source ./.venv/bin/activate`
+5. Install the required dependencies: `python -m pip install -r requirements.txt`
+6. Run main.py: `python main.py`
+7. Change parameters in ./src/constants.py
 
 ## Implementation Details
 
