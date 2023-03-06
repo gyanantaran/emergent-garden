@@ -2,6 +2,28 @@
 
 This project(built over a weekend) is a simulation of emergent behavior, with particles that interact with each other and their environment. The goal of this project is to create a simulation that demonstrates emergent behavior, which arises when the collective behavior of a large number of entities results in complex, unexpected patterns.
 
+## Some example images
+
+![A winged entity is born!](./docs/images/main-1.jpg "Example Image 1")
+
+![A fast bacteria is born!](./docs/images/main-2.jpg "Example Image 2")
+
+![I have run out of descriptions!](./docs/images/main-4.jpg "Example Image 4")
+
+![I have to open the image!](./docs/images/main-5.jpg "Example Image 5")
+
+![Onto the next project!](./docs/images/main-6.jpg "Example Image 6")
+
+![Yes, I have exams!](./docs/images/main-7.jpg "Example Image 7")
+
+https://user-images.githubusercontent.com/95016059/222963837-e8ee8f93-9801-4724-95ba-d5fdd2b2f799.mov
+
+https://user-images.githubusercontent.com/95016059/222963862-7694d343-2658-421c-ae9e-ea5b7686f50f.mov
+
+https://user-images.githubusercontent.com/95016059/223040045-1a34ad97-63f3-4325-9cc7-e44061713d26.mov
+
+https://user-images.githubusercontent.com/95016059/223040070-bec16136-0791-455a-84ab-9abf429b69cb.mov
+
 ## Features
 
 - Particles spawn at random locations within the spawning margins, and move around the screen according to a variety of forces.
@@ -34,28 +56,6 @@ To run the simulation, simply navigate to the directory containing the main.py c
 ```sh
 python main.py
 ```
-
-## Some example images
-
-![A winged entity is born!](./docs/images/main-1.jpg "Example Image 1")
-
-![A fast bacteria is born!](./docs/images/main-2.jpg "Example Image 2")
-
-![I have run out of descriptions!](./docs/images/main-4.jpg "Example Image 4")
-
-![I have to open the image!](./docs/images/main-5.jpg "Example Image 5")
-
-![Onto the next project!](./docs/images/main-6.jpg "Example Image 6")
-
-![Yes, I have exams!](./docs/images/main-7.jpg "Example Image 7")
-
-https://user-images.githubusercontent.com/95016059/222963837-e8ee8f93-9801-4724-95ba-d5fdd2b2f799.mov
-
-https://user-images.githubusercontent.com/95016059/222963862-7694d343-2658-421c-ae9e-ea5b7686f50f.mov
-
-https://user-images.githubusercontent.com/95016059/223040045-1a34ad97-63f3-4325-9cc7-e44061713d26.mov
-
-https://user-images.githubusercontent.com/95016059/223040070-bec16136-0791-455a-84ab-9abf429b69cb.mov
 
 ## How it Works
 The simulation consists of a number of particles that move around a 2D environment. Each particle follows basic laws of physics: it moves with constant velocity unless acted on by an external force, and it experiences a force proportional to the inverse square of the distance to other particles. The particles are also affected by the boundaries of the simulation environment, which exert a repulsive force to keep them from leaving.
