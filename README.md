@@ -41,8 +41,6 @@ python main.py
 
 ![A fast bacteria is born!](./docs/images/main-2.jpg "Example Image 2")
 
-![Another entity is born!](./docs/images/main-3.jpg "Example Image 3")
-
 ![I have run out of descriptions!](./docs/images/main-4.jpg "Example Image 4")
 
 ![I have to open the image!](./docs/images/main-5.jpg "Example Image 5")
