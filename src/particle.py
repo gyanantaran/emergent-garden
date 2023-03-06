@@ -7,7 +7,7 @@ from ctypes import c_ubyte
 import pygame
 import random
 import math
-import numpy
+
 
 from src.constants import PARTICLE_DEFAULT_RADIUS, SCREEN_DIM, WALL_HEAT, WALL_BOUNDARY, PARTICLE_FORCE_LOWER_RANGE, PARTICLE_FORCE_UPPER_RANGE, PARTICLE_POWER_OF_DISTANCE, PARTICLE_DEFAULT_UPDATE_TIME, PARTICLE_LOSE_ENERGY
 
@@ -133,7 +133,7 @@ def instantiateGroup(
     num: int,
     c: tuple,
     frame: Tuple[Tuple[int, int], Tuple[int, int]]
-    ) -> numpy.array:
+    ) -> List[Particle]:# -> numpy.array:
     """Method to instantiate a group of particles
 
     Args:
