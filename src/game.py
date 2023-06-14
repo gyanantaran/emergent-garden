@@ -45,7 +45,7 @@ class Game:
             #     particle.update(self.dt)
 
             # INTERACTION DEFINITIONS
-            apply_rule(red_particles, red_particles, -0.65)
+            apply_rule(red_particles, red_particles, 0.65)
             apply_rule(red_particles, yellow_particles, -0.2)
             apply_rule(red_particles, green_particles, -0.3)
             apply_rule(red_particles, blue_particles, 0.55)
@@ -70,7 +70,7 @@ class Game:
             apply_rule(blue_particles, white_particles, -0.2)
 
             apply_rule(white_particles, white_particles, -0.3)
-            apply_rule(white_particles, blue_particles, -0.2)
+            apply_rule(white_particles, blue_particles, 0.8)
             apply_rule(white_particles, red_particles, 0.4)
             apply_rule(white_particles, yellow_particles, -0.3)
             apply_rule(white_particles, green_particles, -0.6)
