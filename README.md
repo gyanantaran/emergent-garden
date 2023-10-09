@@ -119,3 +119,7 @@ BrainXYZ (YouTube)
 ## License
 
 This project is licensed under the MIT License. See the `LICENSE` file for more information.
+
+@vishalpaudel
+
+![cell-montage](https://github.com/vishalpaudel/emergent-garden/assets/95016059/a2041390-437f-407e-a459-53a6a52451dc)
