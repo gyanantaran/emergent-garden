@@ -1,5 +1,7 @@
 # Emergent Behaviour Simulation
 
+![cell-montage](https://github.com/vishalpaudel/emergent-garden/assets/95016059/a2041390-437f-407e-a459-53a6a52451dc)
+
 ## Contributing
 
 Contributions are welcome! Feel free to open a pull request or submit an issue if you find any bugs or have any suggestions for new features.
