@@ -1,6 +1,6 @@
 # Emergent Garden 🦠
 
-![cell-montage](https://github.com/vishalpaudel/emergent-garden/assets/95016059/a2041390-437f-407e-a459-53a6a52451dc)
+[![cell-montage](https://github.com/vishalpaudel/emergent-garden/assets/95016059/a2041390-437f-407e-a459-53a6a52451dc)](https://youtu.be/JlVDaj9zQ8g)
 
 ## Contributing
 
